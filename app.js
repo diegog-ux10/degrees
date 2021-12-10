@@ -1,14 +1,21 @@
 //Forecast today
-const kelvin = 0;
+const kelvin = 200;
 
-//Convert Kelvin to Celsius
+//The value of Celsius
 let celsius = kelvin - 273;
 
-//Convert Celsius to Fahrenheit
+//The value of fahrenheit
 let fahrenheit = celsius * (9/5) + 32;
 
-//Eliminated the decimal to the result in fahrenheit
+//Eliminated the decimal to the result
 fahrenheit = Math.floor(fahrenheit);
 
-//Log the Result
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+
+// Convert to Newton
+let newton = celsius * (33 / 100);
+ 
+// Round down
+newton = Math.floor(newton);
+ 
+console.log(`The temperature is ${newton} degrees Newton.`);
